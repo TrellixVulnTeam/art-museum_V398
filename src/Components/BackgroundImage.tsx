@@ -7,7 +7,7 @@ export default function BackgroundImage() {
 		<div className="backgroundImage" onLoad={() => setIsLoaded(true)}
 		>
 			<div className="imageText">
-				<h2>We preserve History To build Future</h2>
+				<h2>big test</h2>
 			</div>
 		</ div>
 	);

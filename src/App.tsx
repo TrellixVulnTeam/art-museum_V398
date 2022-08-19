@@ -1,12 +1,14 @@
 import './App.scss';
 import Navbar from "./Components/Navbar"
 import BackgroundImage from "./Components/BackgroundImage"
+import History from "./Components/History"
 
 export default function App() {
-  return (
+	return (
 		<div className="app">
 			<Navbar />
 			<BackgroundImage />
+			<History />
 		</div>
 	);
 }

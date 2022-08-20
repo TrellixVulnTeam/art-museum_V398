@@ -37,10 +37,10 @@ export default function Navbarr() {
 
 				<div className={isHamburgerPressed === false ? "nav-links rolledUpNavLinks" : "nav-links"} onClick={() => setIsHamburgerPressed(false)}>
 					<motion.a animate={{y: 0}} transition={{delay: 1}} initial={{y: -50}} href="#">Home</motion.a>
-					<motion.a animate={{y: 0}} transition={{delay: 1.10}} initial={{y: -50}} href="#">Events</motion.a>
-					<motion.a animate={{y: 0}} transition={{delay: 1.20}} initial={{y: -50}} href="#">Gallery</motion.a>
+					<motion.a animate={{y: 0}} transition={{delay: 1.20}} initial={{y: -50}} href="#">Events</motion.a>
+					<motion.a animate={{y: 0}} transition={{delay: 1.40}} initial={{y: -50}} href="#">Gallery</motion.a>
 				<div className="logoWrapper">
-					<motion.div animate={{y: 0}} transition={{delay: 1.60}} initial={{y: -150}} className='logo'>
+					<motion.div animate={{y: 0}} transition={{delay: 2.50}} initial={{y: -150}} className='logo'>
 						<img
 							src="https://www.upload.ee/image/14420032/museum-icon-12886.png"
 							alt="museum icon"
@@ -48,9 +48,9 @@ export default function Navbarr() {
 							<p>Lorem Ipsum Museum</p>
 						</motion.div>
 					</div>
-				<motion.a animate={{y: 0}} transition={{delay: 1.30}} initial={{y: -50}} href="#">Updates</motion.a>
-				<motion.a animate={{y: 0}} transition={{delay: 1.40}} initial={{y: -50}} href="#">History</motion.a>
-				<motion.a animate={{y: 0}} transition={{delay: 1.50}} initial={{y: -50}} href="#">Contact</motion.a>
+				<motion.a animate={{y: 0}} transition={{delay: 1.60}} initial={{y: -50}} href="#">Updates</motion.a>
+				<motion.a animate={{y: 0}} transition={{delay: 1.80}} initial={{y: -50}} href="#">History</motion.a>
+				<motion.a animate={{y: 0}} transition={{delay: 2}} initial={{y: -50}} href="#">Contact</motion.a>
 				</div>
 			<div className="nav-btn" onClick={() => hamburgerPressFunction()}>
 				<label htmlFor="nav-check">

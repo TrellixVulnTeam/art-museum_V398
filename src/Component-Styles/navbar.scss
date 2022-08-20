@@ -131,6 +131,9 @@ a {
   }
 }
 @media (max-width: 860px) {
+	.scrolledDownNav{
+		background-color: transparent !important;
+	}
 	.logoWrapper{
 		display: none;		
 	}

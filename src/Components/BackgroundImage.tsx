@@ -4,6 +4,6 @@ export default function BackgroundImage() {
 	return (
 		<div className="backgroundImage">
 			
-		</ div>
+		</div>
 	);
 }

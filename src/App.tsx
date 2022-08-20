@@ -8,7 +8,9 @@ export default function App() {
 		<div className="app">
 			<Navbar />
 			<BackgroundImage />
+			<div className="container-lg">
 			<History />
+			</div>
 		</div>
 	);
 }

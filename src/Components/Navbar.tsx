@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import "../Component-Styles/navbar.scss";
 import {motion} from "framer-motion";
-
+import '../Component-Styles/transitions.scss';
+import {Link} from "react-router-dom"
 
 export default function Navbarr() {
 	const [isHamburgerPressed, setIsHamburgerPressed] = useState<boolean>(false);
@@ -29,28 +30,31 @@ export default function Navbarr() {
 
 	return (
 		<>
-			<div
+			<motion.div
+				animate={{opacity: 1}}
+				initial={{opacity: 0}}
+				transition={{duration: 2}}
 				className={
 					yPosition > 100 ? "nav scrolledDownNav" : "nav navbarFadeIn"
 				}>
 				<input type="checkbox" id="nav-check" />
 
 				<div className={isHamburgerPressed === false ? "nav-links rolledUpNavLinks" : "nav-links"} onClick={() => setIsHamburgerPressed(false)}>
-					<motion.a animate={{y: 0}} transition={{delay: 1}} initial={{y: -50}} href="#">Home</motion.a>
-					<motion.a animate={{y: 0}} transition={{delay: 1.20}} initial={{y: -50}} href="#">Events</motion.a>
-					<motion.a animate={{y: 0}} transition={{delay: 1.40}} initial={{y: -50}} href="#">Gallery</motion.a>
+					<Link to="/history">Home</Link>
+					<Link to="/">Events</Link>
+					<Link to="#">Gallery</Link>
 				<div className="logoWrapper">
-					<motion.div animate={{y: 0}} transition={{delay: 2.50}} initial={{y: -150}} className='logo'>
+					<div className='logo'>
 						<img
 							src="https://www.upload.ee/image/14420032/museum-icon-12886.png"
 							alt="museum icon"
 							id="museum-logo" />
 							<p>Lorem Ipsum Museum</p>
-						</motion.div>
+						</div>
 					</div>
-				<motion.a animate={{y: 0}} transition={{delay: 1.60}} initial={{y: -50}} href="#">Updates</motion.a>
-				<motion.a animate={{y: 0}} transition={{delay: 1.80}} initial={{y: -50}} href="#">History</motion.a>
-				<motion.a animate={{y: 0}} transition={{delay: 2}} initial={{y: -50}} href="#">Contact</motion.a>
+				<Link to="#">Updates</Link>
+				<Link to="#">History</Link>
+				<Link to="#">Contact</Link>
 				</div>
 			<div className="nav-btn" onClick={() => hamburgerPressFunction()}>
 				<label htmlFor="nav-check">
@@ -59,7 +63,7 @@ export default function Navbarr() {
 					<span></span>
 					</label>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 }

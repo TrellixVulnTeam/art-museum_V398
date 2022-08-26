@@ -1,16 +1,17 @@
-import './App.scss';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar"
-import BackgroundImage from "./Components/BackgroundImage"
-import History from "./Components/History"
+import AnimatedRoutes from "./Components/AnimatedRoutes"
+import './App.scss';
+import './Component-Styles/transitions.scss';
+
 
 export default function App() {
-	return (
-		<div className="app">
+  return (
+    <div className="app">
+			<Router>
 			<Navbar />
-			<BackgroundImage />
-			<div className="container-lg">
-			<History />
-			</div>
+			<AnimatedRoutes />
+			</Router>
 		</div>
-	);
+  );
 }

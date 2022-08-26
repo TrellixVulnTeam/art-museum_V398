@@ -1,19 +1,37 @@
 $navAnchorColor: #ccd6f6;
 
+
+@media (min-width: 860px) {
+	.nav-links > a {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links > a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $navAnchorColor;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.nav-links > a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 * {
   box-sizing: border-box;
 }
 
-.header {
-  text-align: center;
-  color: white;
-  background-color: #05a799;
-  padding: 5px 0px;
-  position: fixed;
-  width: 100%;
-  z-index: 201;
-  font-size: 15px;
+
 }
+
 body {
   margin: 0px;
   font-family: Comic Sans;
@@ -33,24 +51,9 @@ body {
 }
 #museum-logo{
 	width: 35px;
-	filter: invert(92%) sepia(9%) saturate(6423%) hue-rotate(184deg) brightness(100%) contrast(93%);
+	filter: invert(92%) sepia(9%) saturate(6423%) hue-rotate(184deg) brightness(110%) contrast(93%);
 }
 
-.utility-links {
-  display: inline;
-  font-size: 18px;
-  width: 30%;
-  position: relative;
-  left: 13%;
-  margin-top: 10px;
-		a {
-	  display: inline-block;
-	  padding: 13px 20px;
-	  font-size: 14px;
-	  text-decoration: none;
-	  color: #009a87 !important;
-		}
-}
 
 a {
   color: #009a87;
@@ -59,19 +62,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   padding: 20px 0;
-  transition: color 0.25s linear;
-}
-.searchBar {
-  display: inline;
-  color: #009a87;
-}
-.text-input {
-  outline: 0;
-  border-width: 0 0 1px;
-  border-color: #009a87;
-}
-#resumeButton {
-  border: 3px solid #ff5277;
+  transition: color 0.25s linear;	
 }
 
 .scrolledDownNav{
@@ -97,10 +88,11 @@ a {
 	  margin-top: 13px;
 			a {
 			  display: inline-block;
-			  padding: 13px 20px;
+			  margin: 13px 20px;
+				padding-bottom: 10px;
 			  font-size: 14px;
 			  text-decoration: none;
-			  color: $navAnchorColor;
+			  color: $navAnchorColor;				
 			}
 			a:hover {
 			  color: white;
@@ -109,11 +101,6 @@ a {
 	.nav-btn {
   display: none;
 	}
-}
-
-
-.nav-link-number {
-  color: #cedfdb !important;
 }
 
 .nav > #nav-check {
@@ -130,18 +117,19 @@ a {
   	}
   }
 }
-@media (max-width: 860px) {
+@media (max-width: 600px) {
+	.nav-links{
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 870px) {
 	.scrolledDownNav{
 		background-color: transparent !important;
 	}
 	.logoWrapper{
 		display: none;		
 	}
-  .li {
-    position: absolute;
-    right: 110px;
-    margin-bottom: 60px;
-  }
   .nav-links {
     background-color: #030301;
   }
@@ -153,6 +141,7 @@ a {
 	    position: absolute;
 	    display: block;
 			padding-top: 73px !important;
+			background-image: url(https://collectionapi.metmuseum.org/api/collection/v1/iiif/437630/1930107/main-image);
 			margin-top: 0px;
 	    width: 50%;
 	    height: 0px;
@@ -163,11 +152,11 @@ a {
 	    top: 0px;
 	    left: 0px;
 	    z-index: 200;
-	    padding-left: 30px;
 	    text-align: center;
 				a {
 			    display: block;
 			    width: 100%;
+					margin-left: 0px;
 			  }
 	  	}
 			.nav-btn {
@@ -193,17 +182,7 @@ a {
 	}
   .utility-links {
     display: none;
-  }
-  .cart {
-    position: absolute;
-    right: 10px;
-    margin-left: 20px;
-  }
-  .nav > .nav-btn > label:hover,
-  .nav #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-	
+  }	
   .nav-links {
     height: 100vh !important;
 		width: 100%;
@@ -213,4 +192,3 @@ a {
 		padding: 0px !important;		
   }
 }
-

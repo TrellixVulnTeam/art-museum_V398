@@ -1,43 +1,6 @@
-.history{
-	display: flex;
-	justify-content: space-around;
-	margin-top: 100px;
-	color: white;
-	.rightParagraphWrapper{
-		max-width: 500px;
-		padding-left: 30px;
-
-	}
-	.leftParagraphWrapper{
-		display: flex;
-		flex-direction: column;
-		max-width: 600px;
-	}
-	h2{
-		text-align: center;
-		font-weight: 100 !important;
-		font-family: bellafair;
-		text-transform: uppercase;
-		font-size: 48px;
-		letter-spacing: 10px;
-	}
-}
-.historyImg{
-	width: 100%;
-}
-@media (max-width: 1130px) {
-	.rightParagraphWrapper{
-		max-width: 400px !important;
-	}
-}
-@media (max-width: 860px) {
-	.history{
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.rightParagraphWrapper{
-		max-width: 600px !important; 
-		padding-left: 0px !important;
-	}
+.historyWrapper{
+	width: 100vw;
+	height: 100vh;
+	padding: 0px 90px;
+	background-color: white;
 }

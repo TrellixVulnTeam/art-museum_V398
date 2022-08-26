@@ -2,9 +2,8 @@ body{
 	padding: 0px;
 	margin: 0px;
 	background-color: #040404;
-}
-.container-lg{
-	padding: 0px 90px;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 @media (max-width: 1130px) {
 	.container-lg{

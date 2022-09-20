@@ -1,5 +1,19 @@
 #events{
 	padding-top: 120px;
+	margin: 0px 70px;		
+}
+.styles-module_slider__o0fqa{
+
+}
+.eventsWrapper{
+	background-image: url(https://intro819.files.wordpress.com/2017/11/michelangelo_caravaggio_021.jpg);
+	background-size: cover;
+}
+#activeEventsHeader{
+	color: #ccd6f6;
+	font-size: 20px;
+	letter-spacing: 0.13em;
+	font-weight: 1;
 }
 .styles-module_item-provider__YgMwz{
 	cursor: default !important;
@@ -10,8 +24,9 @@
 	border: none;
 	cursor: pointer;
 	height: 80px;
-	width: 50px;
-	right: 5px;
+	width: 20px;
+	right: -35px;
+	margin-top: 25px;
 	outline: 0;
 	position: relative;
 	position: absolute;
@@ -21,18 +36,14 @@
 	border: none;
 	cursor: pointer;
 	height: 80px;
-	width: 50px;
+	left: -35px;
+	margin-top: 25px;
+	width: 20px;
 	outline: 0;
 	position: relative;
 	position: absolute;
-	left: 5px;
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
-}
-
-
-h1{
-	color: white;
 }
 
 
@@ -40,7 +51,7 @@ h1{
 	[data-arrow~="right"] > button, [data-arrow~="left"] > button {
 		display: none;
 	}
-	.styles-module_slider__o0fqa{
-		margin: 0px 10px !important;
+	#events{
+		margin: 0px 20px !important;
 	}
 }

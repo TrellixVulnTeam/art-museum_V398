@@ -46,20 +46,24 @@ export default function BackgroundImage() {
 	console.log(events)
 	return (
 		<AnimatedPage>
-			<div id="events">
-				<ScrollingCarousel show={3.5} slide={2} transition={0.5} swiping = {true}>
-					{events.map((event)=> {
-						{return(
-							<Item
-								description = {event.description}
-								imgSrc={event.imgSrc}
-								tags={event.tags}
-								subject = {event.subject}
-							/>
-						)}
-					})}
-				</ScrollingCarousel>
+			<div className='eventsWrapper'>
+					<div id="events">
+					<h1 id="activeEventsHeader">Active Events </h1>
+					<ScrollingCarousel show={3.5} slide={2} transition={0.5} swiping = {true}>
+						{events.map((event)=> {
+							{return(
+								<Item
+									description = {event.description}
+									imgSrc={event.imgSrc}
+									tags={event.tags}
+									subject = {event.subject}
+								/>
+							)}
+						})}
+					</ScrollingCarousel>
+					</div>
 			</div>
+			
 
 		</AnimatedPage>
 	);

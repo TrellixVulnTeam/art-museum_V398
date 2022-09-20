@@ -34,9 +34,7 @@ export default function Navbarr() {
 				animate={{opacity: 1}}
 				initial={{opacity: 0}}
 				transition={{duration: 2}}
-				className={
-					yPosition > 100 ? "nav scrolledDownNav" : "nav navbarFadeIn"
-				}>
+				className="nav navbarFadeIn">
 				<input type="checkbox" id="nav-check" />
 
 				<div className={isHamburgerPressed === false ? "nav-links rolledUpNavLinks" : "nav-links"} onClick={() => setIsHamburgerPressed(false)}>

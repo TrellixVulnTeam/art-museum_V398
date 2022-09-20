@@ -40,20 +40,18 @@ export default function Navbarr() {
 				<input type="checkbox" id="nav-check" />
 
 				<div className={isHamburgerPressed === false ? "nav-links rolledUpNavLinks" : "nav-links"} onClick={() => setIsHamburgerPressed(false)}>
-					<Link to="/history">Home</Link>
-					<Link to="/">Events</Link>
-					<Link to="#">Gallery</Link>
+					<Link to="/">Home</Link>
+					<Link to="/events">Events</Link>
 				<div className="logoWrapper">
 					<div className='logo'>
 						<img
 							src="https://www.upload.ee/image/14420032/museum-icon-12886.png"
 							alt="museum icon"
 							id="museum-logo" />
-							<p>Lorem Ipsum Museum</p>
+							<p className='museumName'>Museum of Krakozja</p>
 						</div>
 					</div>
-				<Link to="#">Updates</Link>
-				<Link to="#">History</Link>
+				<Link to="/history">Gallery</Link>
 				<Link to="#">Contact</Link>
 				</div>
 			<div className="nav-btn" onClick={() => hamburgerPressFunction()}>

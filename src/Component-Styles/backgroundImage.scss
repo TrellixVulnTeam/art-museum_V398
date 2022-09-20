@@ -1,6 +1,6 @@
 $mainColor: white;
 .backgroundImage{
-	background-image: url(https://www.upload.ee/image/14429269/wallpaperflare.com_wallpaper.jpg);
+	background-image: url(https://www.upload.ee/image/14514588/wallpaperflare.com_wallpaper__11_.jpg);
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
@@ -41,9 +41,13 @@ $mainColor: white;
 		h2{		
 			padding: 10px !important;
 		}
+	}
 }
+@media (max-width: 680px) {
+	.backgroundImage{
+		background-image: url(https://www.upload.ee/image/14429269/wallpaperflare.com_wallpaper.jpg);
+	}
 }
-
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }

@@ -3,15 +3,18 @@ import Navbar from "./Components/Navbar"
 import AnimatedRoutes from "./Components/AnimatedRoutes"
 import './App.scss';
 import './Component-Styles/transitions.scss';
+import { EventsContextProvider } from "./Context/EventsContext";
 
 
 export default function App() {
   return (
     <div className="app">
-			<Router>
-			<Navbar />
-			<AnimatedRoutes />
-			</Router>
+			<EventsContextProvider>			
+				<Router>
+				<Navbar />
+				<AnimatedRoutes />
+				</Router>
+			</EventsContextProvider>
 		</div>
   );
 }

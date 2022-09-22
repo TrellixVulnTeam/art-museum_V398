@@ -12,7 +12,6 @@ export default function AnimatedRoutes(){
 					<Route path = "*" element = {<BackgroundImage />}/>
 					<Route path = "/events" element = {<Events />}/>
 					<Route path = "/details" element = {<Details />}/>
-
 			</Routes>
 		</AnimatePresence>
 	)

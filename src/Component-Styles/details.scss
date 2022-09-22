@@ -9,6 +9,9 @@
 	justify-content: space-between;
 	align-content: space-between;
 	margin-top: 30px;
+	opacity: 1;
+	-webkit-transition: opacity 1000ms linear;
+	transition: opacity 1000ms linear;
 }
 .detailsWrapper{
 	background-image: url(https://intro819.files.wordpress.com/2017/11/michelangelo_caravaggio_021.jpg);
@@ -24,6 +27,7 @@
 		box-shadow: rgba(0, 0, 0, 0.8) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	}
 }
+
 .detailsRight{
 	text-transform: uppercase;
 	

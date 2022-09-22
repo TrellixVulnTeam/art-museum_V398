@@ -13,15 +13,15 @@ export default function Details(){
   let eventId = params.get("eventdetails");
 	
 	let event = events.find(event => event.id == eventId);
-	
-	return(
+	if(event){
+		return(
 		<AnimatedPage>
 			<div className="detailsWrapper">
 				<div className="details">
 					<h1 className="eventNameHeader">{event?.name}</h1>
 					<div className='rightLeftWrapper'>
 						<div className="detailsLeft">					
-						{event ? <img src={event?.imgSrc} alt="Event" /> : <></>}
+						<img src={event?.imgSrc} alt="Event" />
 						</div>
 						<div className="detailsRight">					
 							<div>
@@ -34,4 +34,5 @@ export default function Details(){
 			</div>
 		</AnimatedPage>
 	)
+	}
 }
